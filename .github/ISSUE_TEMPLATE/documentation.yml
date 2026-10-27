@@ -1,0 +1,25 @@
+name: Documentation task
+description: Propose a handbook update
+title: "[Docs]: "
+labels: ["documentation"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What needs documenting or correcting?
+      description: Explain the gap and who needs the information.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Source of truth / evidence
+      description: Link to a code repository, decision, or approved policy.
+    validations:
+      required: false
+  - type: input
+    id: owner
+    attributes:
+      label: Proposed owner (role)
+    validations:
+      required: false
